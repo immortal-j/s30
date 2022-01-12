@@ -28,11 +28,169 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Custom  Styling */
+
+.section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 160px 20vw;
+  /* background-color: #61dafb; */
+}
+.section2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 350px;
+  padding: 160px 3vw;
+  color: #fff;
+  /* background-color: #61dafb; */
+}
+.section3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 350px;
+  padding: 250px 3vw;
+  color: #fff;
+  /* background-color: #61dafb; */
+}
+.navsection {
+  min-height: 60px;
+  max-height: 30px;
+}
+.pos1 {
+  position: absolute;
+  left: 0px;
+  top: -100px;
+  transform: rotate(180deg);
+}
+.pos2 {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+@media screen and (max-width: 480px) {
+  .pos1 {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .pos2 {
+    display: none;
   }
+}
+.lhead {
+  font-size: 60px;
+  font-weight: 800;
+}
+.shead {
+  font-size: 20px;
+  font-weight: 600;
+}
+.black {
+  color: black;
+}
+.text {
+  font-size: 15px;
+  font-weight: 600;
+}
+.pleft {
+  text-align: left;
+}
+.purple {
+  color: #8739f9;
+}
+.purplebg {
+  /* background-color: rgb(135, 57, 249);
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png"); */
+  background-color: #8739f9;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.whitebg {
+  background-color: rgb(255, 255, 255);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+.curvegrid {
+  border-radius: 20px;
+  max-width: 235px !important;
+  margin: 10px !important;
+  box-shadow: 5px 10px 18px 10px #a308eb;
+  z-index: 3;
+}
+@media screen and (max-width: 480px) {
+  .curvegrid {
+    border-radius: 20px;
+    max-width: 165px !important;
+    margin: 5px !important;
+    box-shadow: 2px 5px 12px 6px #9917cc;
+    z-index: 3;
+  }
+  .shead {
+    font-size: 12px;
+  }
+}
+
+.wave1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave1 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 269px;
+  transform: rotateY(180deg);
+}
+
+.wave1 .shape-fill {
+  /* fill: #8739f9; */
+  fill: #8739f9;
+}
+.wave2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 269px;
+  transform: rotateY(180deg);
+}
+
+.wave2 .shape-fill {
+  fill: #8739f9;
+}
+.wave3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave3 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 180px;
+  transform: rotateY(180deg);
+}
+
+.wave3 .shape-fill {
+  fill: #8739f9;
 }
