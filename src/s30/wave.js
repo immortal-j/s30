@@ -1,6 +1,5 @@
-import './App.css';
-import Navbar from './navbar';
-import Landing from './landing';
+import '../App.css';
+
 function Wave() {
   return (
     <div>

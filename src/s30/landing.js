@@ -1,9 +1,10 @@
-import "./App.css";
+import "../App.css";
 import Navbar from "./navbar";
 import Wave from "./wave";
 import Placedat from "../placeddata";
 import Lotie from "./lotie";
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
+import Card from './card';
 function Landing() {
   return (
     <div>
@@ -31,57 +32,24 @@ function Landing() {
         <Wave />
       </section>
       <section class="purplebg section2">
-        <Grid container spacing={10}>
-          <Grid item xs={12} sm={6}>
-            <p class="pleft">
-              <h1 class="lhead">About the Program</h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              animi, vero in quis, eos maiores pariatur consectetur magni culpa
-              similique saepe laborum ipsum commodi quisquam tenetur ullam illum
-              molestias sit?
-            </p>
-          </Grid>
+        <Grid container justifyContent="center" spacing={6}>
+        <Grid item xs={6} sm={3}>
+        <p class="placedhead mar10 pcenter">1000+</p>
+        <p class="placedsub mar10 pcenter">Hours of coding</p>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+        <p class="placedhead mar10 pcenter">400+</p>
+        <p class="placedsub mar10 pcenter">DSA Questions</p>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+        <p class="placedhead mar10 pcenter">100+</p>
+        <p class="placedsub mar10 pcenter">Coding Tests</p>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+        <p class="placedhead mar10 pcenter">30+</p>
+        <p class="placedsub mar10 pcenter">Project Review Sessions</p>
+        </Grid>
 
-          <Grid
-            container
-            xs={12}
-            sm={6}
-            className="black"
-            justifyContent="center"
-          >
-            <Grid className="whitebg curvegrid" container item sm={6} xs={6}>
-              <p>
-                <h1 class="shead">About the Program</h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-                animi, vero in quis, eos maiores pariatur consectetur magni
-               
-              </p>
-            </Grid>
-            <Grid className="whitebg curvegrid" container item sm={6} xs={6}>
-              <p>
-                <h1 class="shead">About the Program</h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-                animi, vero in quis, eos maiores pariatur consectetur magni
-               
-              </p>
-            </Grid>
-            <Grid className="whitebg curvegrid" container item sm={6} xs={6}>
-              <p>
-                <h1 class="shead">About the Program</h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-                animi, vero in quis, eos maiores pariatur consectetur magni
-               
-              </p>
-            </Grid>
-            <Grid className="whitebg curvegrid" container item sm={6} xs={6}>
-              <p>
-                <h1 class="shead">About the Program</h1>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-                animi, vero in quis, eos maiores pariatur consectetur magni
-                
-              </p>
-            </Grid>
-          </Grid>
         </Grid>
       </section>
 
@@ -99,7 +67,33 @@ function Landing() {
             ></path>
           </svg>
         </div>
-        <Placedat />
+      <Grid container justifyContent="center" spacing={6}>
+      <Grid sm={12}>
+        <p class="lhead black mar80">Features</p>
+        <Typography class="shead black mar30">
+          A 6 month long, rigorous, online program designed by industry experts,
+          we provide in-depth access to an industry tested curriculum. 
+        </Typography>
+      </Grid>
+        <Grid item sm={4}>
+          <Card />
+        </Grid>
+        <Grid item sm={4}>
+          <Card/>
+        </Grid>
+        <Grid item sm={4}>
+          <Card/>
+        </Grid>
+        <Grid item sm={4}>
+          <Card/>
+        </Grid>
+        <Grid item sm={4}>
+          <Card/>
+        </Grid>
+        <Grid item sm={4}>
+          <Card/>
+        </Grid>
+      </Grid>
       </section>
     
     </div>
