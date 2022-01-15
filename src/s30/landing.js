@@ -6,6 +6,7 @@ import Lotie from "./lotie";
 import { Grid, Typography } from "@material-ui/core";
 import Card from './card';
 import IncomeAgreement from './incomeAgreement';
+import Testimonial from "./Testimonial";
 
 function Landing() {
   return (
@@ -97,6 +98,7 @@ function Landing() {
         </Grid>
       </Grid>
       </section>
+
       <section className="section4" >
       <Grid sm={12}>
         <p style={{fontSize: '60px',fontWeight: '800'}} >Income Sharing Agreement</p>
@@ -113,6 +115,9 @@ function Landing() {
         </Grid>
         <Grid sm={4}></Grid>
         </Grid>
+      </section>
+      <section className="section5">
+        <Testimonial />
       </section>
     </div>
   );
