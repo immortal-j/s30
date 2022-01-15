@@ -70,9 +70,12 @@ function Landing() {
             ></path>
           </svg>
         </div>
+       
       <Grid container justifyContent="center" spacing={6}>
       <Grid sm={12}>
+      
         <p class="lhead black mar80">Features</p>
+       
         <Typography  class="shead black mar30">
           A 6 month long, rigorous, online program designed by industry experts,
           we provide in-depth access to an industry tested curriculum. 
@@ -96,9 +99,11 @@ function Landing() {
         <Grid item sm={4}>
           <Card/>
         </Grid>
+        
       </Grid>
+      
       </section>
-
+     
       <section className="section4" >
       <Grid sm={12}>
         <p style={{fontSize: '60px',fontWeight: '800'}} >Income Sharing Agreement</p>
@@ -107,18 +112,23 @@ function Landing() {
         remains same even if you get a very high package. 
         We make money only if you have a successful career after finishing the program.
         </Typography>
+       
       </Grid>
         <Grid container>
           <Grid sm={4}></Grid>
         <Grid sm={4}>
+        
           <IncomeAgreement />
         </Grid>
         <Grid sm={4}></Grid>
         </Grid>
+      
       </section>
+     
       <section className="section5">
         <Testimonial />
       </section>
+     
     </div>
   );
 }

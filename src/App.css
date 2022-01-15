@@ -75,7 +75,11 @@
   color: #fff;
   background-color: #8739f9;
 }
-
+.hr1{
+  margin-left: 20vw;
+  margin-right: 20vw;
+  
+}
 .navsection {
   min-height: 60px;
   max-height: 30px;
