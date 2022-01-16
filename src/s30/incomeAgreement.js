@@ -61,18 +61,7 @@ export default function IncomeAgreement() {
     aria-labelledby="alert-dialog-slide-title"
     aria-describedby="alert-dialog-slide-description"
   >
-    <DialogTitle id="alert-dialog-slide-title">{"Use Google's location service?"}</DialogTitle>
-    <DialogContent>
-      <DialogContentText id="alert-dialog-slide-description">
-        Let Google help apps determine location. This means sending anonymous location data to
-        Google, even when no apps are running.
-      </DialogContentText>
-    </DialogContent>
-    <DialogActions>
-      <Button onClick={handleClose} color="primary">
-        Agree
-      </Button>
-    </DialogActions>
+    <DialogTitle id="alert-dialog-slide-title">{"Open Google Form"}</DialogTitle>
   </Dialog>
       <CardContent>
         <Typography className={classes.title} >

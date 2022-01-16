@@ -7,6 +7,8 @@ import { Grid, Typography } from "@material-ui/core";
 import Card from './card';
 import IncomeAgreement from './incomeAgreement';
 import Testimonial from "./Testimonial";
+import OurTeam from './OurTeam'
+import Footer from './Footer'
 
 function Landing() {
   return (
@@ -125,10 +127,14 @@ function Landing() {
       
       </section>
      
+      <section className="section6" >
+        <OurTeam />
+      </section>
       <section className="section5">
         <Testimonial />
       </section>
-     
+      <br/><br/><br/>
+      <Footer />     
     </div>
   );
 }
