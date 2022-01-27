@@ -13,7 +13,7 @@ export default function Lotie() {
 
   return (
     <div>
-      <Lottie options={defaultOptions} height={800} width={800} speed={8}  />
+      <Lottie options={defaultOptions} height={800} width={800} speed={5}  />
     </div>
   );
 }

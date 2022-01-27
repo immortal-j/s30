@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    minHeight:275,
     transition:'0.5s',
     "&:hover":{
         marginTop:'-10px',
@@ -42,26 +43,27 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+  mar:{
+    marginTop:'30px',
+  }
 });
 
-export default function SimpleCard() {
+export default function SimpleCard(props) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
-      <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography>
+      <CardContent className={classes.mar}>
+      <img src={props.x.img}></img>
+       
         <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
+         {props.x.feature}
         </Typography>
        
         <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+         {props.x.data}
+        
         </Typography>
       </CardContent>
      

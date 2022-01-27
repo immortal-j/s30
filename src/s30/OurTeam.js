@@ -24,7 +24,7 @@ export default function OurTeam() {
 
   return (
     <div>
-      <h2>Our Team</h2>
+      <h2 className="lhead">Our Team</h2>
       <Grid container spacing={5} >
         <Grid sm={4} item  >
           <Avatar src="/demo-person.jpg" className={classes.large} />

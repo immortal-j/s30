@@ -1,15 +1,17 @@
 import "../App.css";
 import Navbar from "./navbar";
 import Wave from "./wave";
-import Placedat from "../placeddata";
+import Placedata from "../placeddata";
 import Lotie from "./lotie";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Typography,Button } from "@material-ui/core";
 import Card from './card';
+import ProcessCard from "./processcard";
 import IncomeAgreement from './incomeAgreement';
 import Testimonial from "./Testimonial";
 import OurTeam from './OurTeam'
 import Footer from './Footer'
-
+import Arr from'./featuresdata'
+import processdata from "./processdata";
 function Landing() {
   return (
     <div>
@@ -25,34 +27,36 @@ function Landing() {
           <Lotie />
         </div>
         <h1 class="lhead purple">Super 30</h1>
-        <p className="shead">
-          A 6 month long, rigorous, online program designed by industry experts,
-          we provide in-depth access to an industry tested curriculum. Taught by
-          live instructors, with continuous mentor support & flexible timings,
-          this program doesn’t require any coding background. With a strong
-          focus on imparting industry relevant skills, we will help you land a
-          job in your dream product based company.
+        <p className="shead martop-35">
+        kickstart your placement journey
         </p>
-
+        <p className="shead martop-15">
+        Average ₹ 5 – 33 lakhs/annum placement
+        </p>
+        <p className="shead ">
+        Next Batch : February
+        </p>
+       <a href="#apply" className="btn">APPLY</a>
+        
         <Wave />
       </section>
       <section class="purplebg section2">
         <Grid container justifyContent="center" spacing={6}>
         <Grid item xs={6} sm={3}>
-        <p class="placedhead mar10 pcenter">1000+</p>
+        <p class="placedhead mar10 pcenter">500+</p>
         <p class="placedsub mar10 pcenter">Hours of coding</p>
         </Grid>
         <Grid item xs={6} sm={3}>
         <p class="placedhead mar10 pcenter">400+</p>
-        <p class="placedsub mar10 pcenter">DSA Questions</p>
+        <p class="placedsub mar10 pcenter">Coding Questions</p>
         </Grid>
         <Grid item xs={6} sm={3}>
-        <p class="placedhead mar10 pcenter">100+</p>
+        <p class="placedhead mar10 pcenter">40+</p>
         <p class="placedsub mar10 pcenter">Coding Tests</p>
         </Grid>
         <Grid item xs={6} sm={3}>
-        <p class="placedhead mar10 pcenter">30+</p>
-        <p class="placedsub mar10 pcenter">Project Review Sessions</p>
+        <p class="placedhead mar10 pcenter">500+</p>
+        <p class="placedsub mar10 pcenter">students placed</p>
         </Grid>
 
         </Grid>
@@ -79,57 +83,53 @@ function Landing() {
         <p class="lhead black mar80">Features</p>
        
         <Typography  class="shead black mar30">
-          A 6 month long, rigorous, online program designed by industry experts,
-          we provide in-depth access to an industry tested curriculum. 
+        Designed with an initiative to improve one's coding abilities preparing them not only for high paying off-campus
+ placement opportunities but also for coding rounds/interviews of campus companies as well.
+We assure to take one's coding skills to the next level & make you placement ready.
         </Typography>
       </Grid>
-        <Grid item sm={4}>
-          <Card />
+      {Arr.map((x,i)=>{
+        return <Grid key={i} item sm={4}>
+          <Card x={x}/>
         </Grid>
-        <Grid item sm={4}>
-          <Card/>
-        </Grid>
-        <Grid item sm={4}>
-          <Card/>
-        </Grid>
-        <Grid item sm={4}>
-          <Card/>
-        </Grid>
-        <Grid item sm={4}>
-          <Card/>
-        </Grid>
-        <Grid item sm={4}>
-          <Card/>
-        </Grid>
+      })}
         
       </Grid>
       
       </section>
      
-      <section className="section4" >
+      <section className="section4" id="apply" >
       <Grid sm={12}>
-        <p style={{fontSize: '60px',fontWeight: '800'}} >Income Sharing Agreement</p>
+        <p style={{fontSize: '60px',fontWeight: '800'}} >Choose your plan</p>
         <Typography style={{fontSize: '20px',fontWeight: '600',margin:'50px'}} >
-        Our fees plan follow an Income Sharing Agreement (ISA) model through which tuition fees is paid after getting a job. Total fees is capped and 
-        remains same even if you get a very high package. 
-        We make money only if you have a successful career after finishing the program.
+        We provide the following  2 flexible payment plans,user can choose any of the two according to his/her convenience.
+We make money only if we are successfull in getting you placed.
         </Typography>
        
       </Grid>
-        <Grid container>
-          <Grid sm={4}></Grid>
-        <Grid sm={4}>
         
+        <Grid sm={12}>
           <IncomeAgreement />
         </Grid>
-        <Grid sm={4}></Grid>
+        <p style={{fontSize: '60px',fontWeight: '800'}} >Admission Process</p>
+        <Grid sm={12} container justifyContent="center" spacing={3}> 
+        {
+          processdata.map((obj,i)=>{
+            return <Grid key={i} sm={4} item>
+        <ProcessCard obj={obj}/>
         </Grid>
+          })
+        }
+       
+        </Grid>
+        
       
       </section>
      
       <section className="section6" >
         <OurTeam />
       </section>
+      <Placedata />
       <section className="section5">
         <Testimonial />
       </section>
