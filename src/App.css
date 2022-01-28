@@ -35,25 +35,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 400px;
-  padding: 160px 20vw;
+  padding: 0 20vw 80px 20vw;
+  min-height: 600px;
+  /* padding: 160px 20vw; */
   /* background-color: #61dafb; */
 }
+
 .section2 {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: 500px;
-  padding: 70px 3vw;
+  max-height: 400px;
+  padding: 30px 3vw 0 3vw;
   color: #fff;
   /* background-color: #61dafb; */
 }
+
 .section3 {
   position: relative;
   display: flex;
   flex-direction: column;
- 
-  padding: 100px 3vw;
+  padding: 100px 3vw 50px 3vw;
   color: #fff;
   /* background-color: #61dafb; */
 }
@@ -66,6 +68,7 @@
   /* color: #000; */
   /* background-color: #61dafb; */
 }
+
 .section5 {
   position: relative;
   display: flex;
@@ -76,17 +79,16 @@
   background-color: #8739f9;
 }
 
-.section6{
+.section6 {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 40px 3vw;
 }
 
-.hr1{
+.hr1 {
   margin-left: 20vw;
   margin-right: 20vw;
-  
 }
 .navsection {
   min-height: 60px;
@@ -115,7 +117,7 @@
   font-size: 60px;
   font-weight: 800;
 }
-.mhead{
+.mhead {
   font-size: 45px;
   font-weight: 800;
 }
@@ -133,7 +135,7 @@
 .pleft {
   text-align: left;
 }
-.pcenter{
+.pcenter {
   text-align: center;
 }
 .purple {
@@ -169,47 +171,47 @@
     font-size: 12px;
   }
 }
-.btn{
-  color:white;
+.btn {
+  color: white;
   font-weight: 800;
   border-radius: 10px;
-  background-color:#8739f9;
+  background-color: #8739f9;
   width: 100px;
   padding: 10px;
-  margin-top:35px;
-  z-index: 1000!important;
+  margin-top: 35px;
+  z-index: 1000 !important;
   text-decoration: none;
 }
-.martop-35{
+.martop-35 {
   margin-top: -35px;
 }
-.martop-15{
-  margin-top:-15px;
+.martop-15 {
+  margin-top: -15px;
 }
-.mar10{
+.mar10 {
   margin: 10px;
 }
-.mar80{
+.mar80 {
   margin-top: 80px;
   margin-bottom: 0px;
 }
-.mar30{
+.mar30 {
   margin: 30px;
 }
-.placedhead{
+.placedhead {
   font-size: 70px;
   font-weight: 600;
 }
-.placedsub{
+.placedsub {
   font-size: 20px;
   font-weight: 600;
 }
 @media screen and (max-width: 480px) {
-  .placedhead{
+  .placedhead {
     font-size: 50px;
     font-weight: 600;
   }
-  .placedsub{
+  .placedsub {
     font-size: 20px;
     font-weight: 600;
   }
@@ -257,6 +259,7 @@
 .wave2 .shape-fill {
   fill: #8739f9;
 }
+
 .wave3 {
   position: absolute;
   top: 0;

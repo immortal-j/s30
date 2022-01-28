@@ -1,26 +1,14 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Card, Grid } from "@material-ui/core/";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import Slide from "@material-ui/core/Slide";
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
-    marginBottom: "59px",
-    height: "550px",
+    minWidth: 250,
+    marginBottom: "50px",
+    minHeight: "450px",
     "&:hover": {
       marginTop: "-10px",
       border: "2px solid transparent",
@@ -45,150 +33,205 @@ const useStyles = makeStyles({
       borderImageSlice: "1",
     },
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)",
-  },
   title: {
-    fontSize: 22,
+    fontSize: 40,
+    fontWeight: 600,
   },
   pos: {
-    marginTop: "15px",
+    marginTop: "10px",
     marginBottom: "20px",
-    fontSize: "16px",
+    fontSize: "15px",
+  },
+  table: {
+    border: "2px solid forestgreen",
+    width: "85%",
+    margin: "auto",
+    marginTop: "25px",
+  },
+  tr: {
+    borderBottom: "1px solid black",
+  },
+  th: {
+    borderBottom: "1px solid black",
+    borderLeft: "2px solid green",
+    fontSize: "20px",
+    padding: "10px",
+  },
+  th1: {
+    borderBottom: "1px solid black",
+    fontSize: "20px",
+    padding: "10px",
+  },
+  td: {
+    textAlign: "center",
+    borderLeft: "2px solid green",
+    fontSize: "20px",
+    padding: "10px",
+  },
+  td1: {
+    textAlign: "center",
+    fontSize: "20px",
+    padding: "10px",
   },
 });
 
 export default function IncomeAgreement() {
-  const [open, setOpen] = React.useState(false);
-  const handleClickOpen = () => {
-    console.log(open);
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Grid container justifyContent="center" spacing={9}>
       <Grid item sm={6}>
         <Card className={classes.root}>
           <CardContent>
-            <Typography className={classes.title}>Plan1</Typography>
+            <Typography className={classes.title}>PLAN A</Typography>
             <hr />
-
             <Typography
-              style={{ marginTop: "25px", fontSize: "19px" }}
+              style={{ marginTop: "25px", fontSize: "25px", fontWeight: "550" }}
               variant="h5"
               component="h2"
             >
-              Upfront Registration Fees
-            </Typography>
-            <Typography className={classes.pos} color="textSecondary">
               No Registration Fees
             </Typography>
-
+            <Typography className={classes.pos} color="textSecondary">
+              Upfront Registration Fees
+            </Typography>
             <hr />
-
             <Typography
-              style={{ marginTop: "25px", fontSize: "19px" }}
+              style={{ marginTop: "25px", fontSize: "25px", fontWeight: "550" }}
               variant="h5"
               component="h2"
             >
-              Download the above ISA
+              Income Sharing Percentage
             </Typography>
+
+            <table className={classes.table} border="1">
+              <tr className={classes.tr}>
+                <th className={classes.th1}>If You Get</th>
+                <th className={classes.th}>You Pay</th>
+              </tr>
+              <tr className={classes.tr}>
+                <td className={classes.td1}>Internship Offer</td>
+                <td className={classes.td}>
+                  35% of monthly salary for 1 month
+                </td>
+              </tr>
+              <tr className={classes.tr}>
+                <td className={classes.td1}>Full-Time Offer</td>
+                <td className={classes.td}>
+                  30% of monthly salary for 1 month
+                </td>
+              </tr>
+            </table>
+
+            {/* <Grid container justifyContent="center">
+              <Grid item sm={4}>
+                <Typography
+                  style={{ marginTop: "25px", fontSize: "20px" }}
+                  variant="h5"
+                  component="h2"
+                >
+                  If you get
+                </Typography>
+              </Grid>
+              <Grid item sm={8}>
+                <Typography
+                  style={{ marginTop: "25px", fontSize: "20px" }}
+                  variant="h5"
+                  component="h2"
+                >
+                  You need to pay
+                </Typography>
+              </Grid>
+            </Grid>
+
+            <Grid container justifyContent="center">
+              <Grid item sm={4}>
+                <Typography
+                  style={{ marginTop: "25px", fontSize: "20px" }}
+                  variant="h5"
+                  component="h2"
+                >
+                  Internship Offer
+                </Typography>
+              </Grid>
+              <Grid item sm={8}>
+                <Typography
+                  style={{ marginTop: "25px", fontSize: "20px" }}
+                  variant="h5"
+                  component="h2"
+                >
+                  35% of monthly salary for 1 month
+                </Typography>
+              </Grid>
+            </Grid>
+
+            <Grid container justifyContent="center">
+              <Grid item sm={4}>
+                <Typography
+                  style={{ marginTop: "25px", fontSize: "20px" }}
+                  variant="h5"
+                  component="h2"
+                >
+                  Full-Time Offer
+                </Typography>
+              </Grid>
+              <Grid item sm={8}>
+                <Typography
+                  style={{ marginTop: "25px", fontSize: "20px" }}
+                  variant="h5"
+                  component="h2"
+                >
+                  30% of monthly salary for 1 month
+                </Typography>
+              </Grid>
+            </Grid> */}
           </CardContent>
-          <hr />
-          <Typography
-            style={{ marginTop: "25px", fontSize: "19px" }}
-            variant="h5"
-            component="h2"
-          >
-            Inorder to register  for coderun using plan 1;
-          </Typography>
-          <Typography
-            style={{ marginTop: "25px", fontSize: "19px",textAlign:'left',marginLeft:'20px' }}
-            variant="h5"
-            component="h2"
-          >
-            1. download the above isa <br/>2.fill the
-            required details in isa<br/> 2.fill the below application form
-          </Typography>
-          <Button
-            size="small"
-            variant="contained"
-            color="primary"
-            style={{
-              color: "white",
-              backgroundColor: "#8739f9",
-              marginTop: "35px",
-            }}
-            onClick={handleClickOpen}
-          >
-            Apply Now
-          </Button>
         </Card>
       </Grid>
+
       <Grid item sm={6}>
         <Card className={classes.root}>
           <CardContent>
-            <Typography className={classes.title}>Plan2</Typography>
+            <Typography className={classes.title}>PLAN B</Typography>
             <hr />
-
             <Typography
-              style={{ marginTop: "25px", fontSize: "19px" }}
+              style={{ marginTop: "25px", fontSize: "25px", fontWeight: "550" }}
               variant="h5"
               component="h2"
             >
-              Upfront Registration Fees
-            </Typography>
-            <Typography className={classes.pos} color="textSecondary">
               INR 3000
             </Typography>
-
+            <Typography className={classes.pos} color="textSecondary">
+              Upfront Registration Fees
+            </Typography>
             <hr />
-
             <Typography
-              style={{ marginTop: "25px", fontSize: "19px" }}
+              style={{ marginTop: "25px", fontSize: "25px", fontWeight: "550" }}
               variant="h5"
               component="h2"
             >
-              Download ISA
+              Income Sharing Percentage
             </Typography>
+
+            <table className={classes.table} border="1">
+              <tr className={classes.tr}>
+                <th className={classes.th1}>If You Get</th>
+                <th className={classes.th}>You Pay</th>
+              </tr>
+              <tr className={classes.tr}>
+                <td className={classes.td1}>Internship Offer</td>
+                <td className={classes.td}>
+                  25% of monthly salary for 1 month
+                </td>
+              </tr>
+              <tr className={classes.tr}>
+                <td className={classes.td1}>Full-Time Offer</td>
+                <td className={classes.td}>
+                  20% of monthly salary for 1 month
+                </td>
+              </tr>
+            </table>
           </CardContent>
-          <hr />
-          <Typography
-            style={{ marginTop: "25px", fontSize: "19px" }}
-            variant="h5"
-            component="h2"
-          >
-           Inorder to register  for coderun using plan 2;
-          </Typography>
-          <Typography
-            style={{ marginTop: "25px", fontSize: "19px",textAlign:'left',marginLeft:'20px' }}
-            variant="h5"
-            component="h2"
-          >
-            1.upi 3000 inr to upiid() <br/>2. download the above isa <br/>3.fill the
-            required details in isa<br/> 4.fill the below application form
-          </Typography>
-          <Button
-            size="small"
-            variant="contained"
-            color="primary"
-            style={{
-              color: "white",
-              backgroundColor: "#8739f9",
-              marginTop: "35px",
-            }}
-            onClick={handleClickOpen}
-          >
-            Apply Now
-          </Button>
         </Card>
       </Grid>
     </Grid>
