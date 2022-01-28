@@ -8,6 +8,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Fade from "@material-ui/core/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
+
 const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
@@ -100,18 +101,24 @@ export default function ButtonAppBar() {
           <Typography className={classes.title}>O(1) Coding Club</Typography>
           <div className={classes.menuSpace2}></div>
           <div className={classes.desktop}>
-            <Button href="#Landing" className={classes.btn}>
+            <Button href="#" className={classes.btn}>
               Home
             </Button>
-            <Button href="#Events" className={classes.btn}>
-              Events
+            <Button href="#features" className={classes.btn}>
+              Features
             </Button>
-            <Button href="#Alumni" className={classes.btn}>
-              Stories
+            <Button href="#plans" className={classes.btn}>
+              Pricing
             </Button>
-            <Button href="/login" target="__blank" className={classes.btn}>
+            <Button href="#register" className={classes.btn}>
+              Register
+            </Button>
+            <Button href="#testimonials" className={classes.btn}>
+              Testimonials
+            </Button>
+            {/* <Button href="/login" target="__blank" className={classes.btn}>
               CodeRun
-            </Button>
+            </Button> */}
           </div>
           <Button
             className={classes.mobile}

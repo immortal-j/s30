@@ -39,13 +39,22 @@ function Footer() {
           <Grid xs={0} item sm={4}></Grid>
           <Grid container item xs={12} sm={3} justifyContent="center">
             <Grid item container xs={12} justifyContent="center">
-              <Button target="_blank" href="https://www.linkedin.com/in/o-1-coding-club/?originalSubdomain=in">
+              <Button
+                target="_blank"
+                href="https://www.linkedin.com/in/o-1-coding-club/?originalSubdomain=in"
+              >
                 <FontAwesomeIcon icon={faLinkedin} size="2x" color="#8739f9" />
               </Button>
-              <Button target="_blank" href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg/featured">
+              <Button
+                target="_blank"
+                href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg/featured"
+              >
                 <FontAwesomeIcon icon={faYoutube} size="2x" color="#8739f9" />
               </Button>
-              <Button target="_blank" href="https://instagram.com/o1codingclub?igshid=9cnjafv7rzkv">
+              <Button
+                target="_blank"
+                href="https://instagram.com/o1codingclub?igshid=9cnjafv7rzkv"
+              >
                 <FontAwesomeIcon icon={faInstagram} size="2x" color="#8739f9" />
               </Button>
             </Grid>
