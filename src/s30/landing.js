@@ -1,4 +1,5 @@
 import "../App.css";
+import { makeStyles } from "@material-ui/core/styles";
 import Navbar from "./navbar";
 import Wave from "./wave";
 import Lotie from "./lotie";
@@ -11,8 +12,15 @@ import Footer from "./Footer";
 import Arr from "./featuresdata";
 import RegisterSteps from "./registerSteps";
 import Carousel from "./carousel";
-
+const useStyles = makeStyles((theme) => ({
+  mar:{
+    [theme.breakpoints.down('xs')]: {
+      marginBottom:'40px',
+    },
+  }
+}));
 function Landing() {
+  const classes=useStyles();
   return (
     <div>
       <div class="navsection">
@@ -137,14 +145,14 @@ function Landing() {
         <Placedata />
       </section>
 
-      {/* <section className="section6">
+      <section className="section6">
         <OurTeam />
-      </section> */}
+      </section>
 
       <section className="section5" id="testimonials">
         <div>
-          <p style={{ fontSize: "40px", fontWeight: "800" }}>Success Stories</p>
-          <Carousel />
+          <p style={{ fontSize: "40px", fontWeight: "800" }} className={classes.mar}>Success Stories</p>
+          <Carousel  />
         </div>
       </section>
 

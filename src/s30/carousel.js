@@ -56,6 +56,31 @@ const data = [
     imgPath: "tejas.jpeg",
     linkedin: "https://www.linkedin.com/in/tejas-sudhir-tapas/",
   },
+  
+  {
+    name: "Ashwin Walunj |Power Programmer Infosys",
+    label: `So I joined the program called CodeRun conducted by the O(1) coding club, where we were provided with ladders of different levels and after every 3 days, we had doubt clearance sessions. What I understood was to trust the process and keep on enhancing your knowledge and expertise on the basics just combine this with a little bit of luck and you will also land a great job. Finally, I cleared the HackWithInfy and banged an offer for the role of power programmer. If it weren't for the O(1) coding club, I would've known this too late and might not have landed the job that I have now.`,
+    imgPath: "ashwinalunj.jpg",
+    linkedin: "https://www.linkedin.com/in/atharva-u-96436a191/",
+  },
+  {
+    name: "Swaraj Chaudhari | Accenture",
+    label: `Observing myself before & after doing Coderun with  O(1) Coding Club, Now I am very confident. Now I know how exactly to proceed with a given problem. I would seriously recommend you to join the course. Coderun and the aptitude series helped a lot during the placement season.`,
+    imgPath: "swaraj.jpg",
+    linkedin: "https://in.linkedin.com/in/swaraj-chaudhari-860803180",
+  },
+  {
+    name: "Atharva Upadhyay | Infosys",
+    label: `O(1) coding club helped me alot to get focused and streamlined on what topics are important for each competitions/placement. Their personalised guidance and regular doubt sessions uplifted my problem solving skills and my confidence increased. Thank you O(1) coding club and specially Naman and Abhigyan sir to all your efforts in helping me to get such a wonderful placement. It was a great experience to learn and get inspired from you guys.`,
+    imgPath: "atharvaupadhyay.jpg",
+    linkedin: "https://www.linkedin.com/in/atharva-u-96436a191/",
+  },
+  {
+    name: "Vignesh Pathak | Accenture",
+    label: `O1 Coding Club opened a new exciting world for me .  Without their training it would never been that friendly or postive entrance into the world of coding that helped me to get this far . It had played a crucial role in my academic life and my first successful Placement . Thank you for your invaluable help , you have opened new horizons for me !`,
+    imgPath: "vignesh.jpg",
+    linkedin: "https://www.linkedin.com/in/vighnesh-pathak-4018b7192/",
+  },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -85,14 +110,24 @@ const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(15),
     height: theme.spacing(15),
+    [theme.breakpoints.down("sm")]: {
+      width: theme.spacing(10),
+      height: theme.spacing(10),
+    },
   },
   desc: {
     color: "#fff",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "10px",
+    },
   },
   title: {
     color: "#fff",
     fontSize: "25px",
     marginTop: "15px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "15px",
+    },
   },
 }));
 
@@ -135,10 +170,11 @@ function Carousel() {
           </Grid>
         </Grid>
       </Paper>
-      {/*
+
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
+        interval={5000}
         onChangeIndex={handleStepChange}
         enableMouseEvents
       >
@@ -147,7 +183,7 @@ function Carousel() {
             {Math.abs(activeStep - index) <= 2 ? "" : null}
           </div>
         ))}
-      </AutoPlaySwipeableViews> */}
+      </AutoPlaySwipeableViews>
 
       <Grid container justifyContent="center">
         <MobileStepper

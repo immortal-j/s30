@@ -44,6 +44,11 @@ const useStyles = makeStyles({
   step: {
     backgroundColor: "#8739f9",
   },
+  anc:{
+    textDecoration:'none',
+    color:'#8739f9',
+   
+  }
 });
 
 export default function RegisterSteps() {
@@ -127,11 +132,11 @@ export default function RegisterSteps() {
                   className={classes.pos}
                 >
                   Download{" "}
-                  <a href="https://www.google.com" target="_blank">
+                  <a href="https://www.google.com" target="_blank" className={classes.anc}>
                     ISA for Plan A
                   </a>{" "}
                   <b>or</b>{" "}
-                  <a href="https://www.google.com" target="_blank">
+                  <a href="https://www.google.com" target="_blank" className={classes.anc}>
                     ISA for Plan B
                   </a>
                   <br />
@@ -178,7 +183,7 @@ export default function RegisterSteps() {
                   className={classes.pos}
                 >
                   Submit your application in this{" "}
-                  <a href="https://www.google.com" target="_blank">
+                  <a href="https://www.google.com" target="_blank" className={classes.anc}>
                     Google Form
                   </a>
                   . You will need payment proof (if Plan B) and filled ISA to
