@@ -35,8 +35,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20vw 80px 20vw;
+  padding: 10px 20vw 80px 20vw;
   min-height: 600px;
+  background:url("../public/intro.jpg") rgba(0,0,0,0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
   /* padding: 160px 20vw; */
   /* background-color: #61dafb; */
 }
@@ -113,6 +117,9 @@
   .pos2 {
     display: none;
   }
+  .section2{
+    padding: 30px 15vw 0 3vw;
+  }
 }
 .lhead {
   font-size: 60px;
@@ -124,6 +131,10 @@
 }
 .shead {
   font-size: 20px;
+  font-weight: 600;
+}
+.phead{
+  font-size:25px;
   font-weight: 600;
 }
 .black {
@@ -172,6 +183,12 @@
     font-size: 12px;
   }
 }
+.white{
+  color: #fff;
+}
+a{
+  text-decoration: none;
+}
 .btn {
   color: white;
   font-weight: 800;
@@ -184,7 +201,7 @@
   text-decoration: none;
 }
 .martop-35 {
-  margin-top: -35px;
+  margin-top: 20%;
 }
 .martop-15 {
   margin-top: -15px;
@@ -216,6 +233,12 @@
   .placedsub {
     font-size: 15px;
     font-weight: 600;
+  }
+  .martop-35{
+    margin-top: 25%;
+  }
+  .phead{
+    font-size: 20px;
   }
 }
 
