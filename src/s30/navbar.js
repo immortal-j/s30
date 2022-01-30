@@ -144,24 +144,29 @@ export default function ButtonAppBar() {
             <Button onClick={handleClose}>
               <FontAwesomeIcon icon={faTimes} size="2x" color="#8739f9" />
             </Button>
-            <a className={classes.anchor} href="#Landing">
+            <a className={classes.anchor} href="#">
               <MenuItem className={classes.menuitm} onClick={handleClose}>
                 Home
               </MenuItem>
             </a>
-            <a className={classes.anchor} href="#Events">
+            <a className={classes.anchor} href="#features">
               <MenuItem className={classes.menuitm} onClick={handleClose}>
-                Events
+                Features
               </MenuItem>
             </a>
-            <a className={classes.anchor} href="#Alumni">
+            <a className={classes.anchor} href="#plans">
               <MenuItem className={classes.menuitm} onClick={handleClose}>
-                Stories
+                Pricing
               </MenuItem>
             </a>
-            <a className={classes.anchor} href="/login" target="__blank">
+            <a className={classes.anchor} href="#register">
               <MenuItem className={classes.menuitm} onClick={handleClose}>
-                CodeRun
+                Register
+              </MenuItem>
+            </a>
+            <a className={classes.anchor} href="#testimonials">
+              <MenuItem className={classes.menuitm} onClick={handleClose}>
+                Testimonials
               </MenuItem>
             </a>
           </Menu>
