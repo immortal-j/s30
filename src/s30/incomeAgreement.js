@@ -92,9 +92,10 @@ export default function IncomeAgreement() {
             >
               No Registration Fees
             </Typography>
-            <Typography className={classes.pos} color="textSecondary">
-              Upfront Registration Fees
-            </Typography>
+            <Typography
+              className={classes.pos}
+              color="textSecondary"
+            ></Typography>
             <hr />
             <Typography
               style={{ marginTop: "25px", fontSize: "25px", fontWeight: "550" }}
@@ -122,69 +123,6 @@ export default function IncomeAgreement() {
                 </td>
               </tr>
             </table>
-
-            {/* <Grid container justifyContent="center">
-              <Grid item sm={4}>
-                <Typography
-                  style={{ marginTop: "25px", fontSize: "20px" }}
-                  variant="h5"
-                  component="h2"
-                >
-                  If you get
-                </Typography>
-              </Grid>
-              <Grid item sm={8}>
-                <Typography
-                  style={{ marginTop: "25px", fontSize: "20px" }}
-                  variant="h5"
-                  component="h2"
-                >
-                  You need to pay
-                </Typography>
-              </Grid>
-            </Grid>
-
-            <Grid container justifyContent="center">
-              <Grid item sm={4}>
-                <Typography
-                  style={{ marginTop: "25px", fontSize: "20px" }}
-                  variant="h5"
-                  component="h2"
-                >
-                  Internship Offer
-                </Typography>
-              </Grid>
-              <Grid item sm={8}>
-                <Typography
-                  style={{ marginTop: "25px", fontSize: "20px" }}
-                  variant="h5"
-                  component="h2"
-                >
-                  35% of monthly salary for 1 month
-                </Typography>
-              </Grid>
-            </Grid>
-
-            <Grid container justifyContent="center">
-              <Grid item sm={4}>
-                <Typography
-                  style={{ marginTop: "25px", fontSize: "20px" }}
-                  variant="h5"
-                  component="h2"
-                >
-                  Full-Time Offer
-                </Typography>
-              </Grid>
-              <Grid item sm={8}>
-                <Typography
-                  style={{ marginTop: "25px", fontSize: "20px" }}
-                  variant="h5"
-                  component="h2"
-                >
-                  30% of monthly salary for 1 month
-                </Typography>
-              </Grid>
-            </Grid> */}
           </CardContent>
         </Card>
       </Grid>

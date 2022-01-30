@@ -56,7 +56,7 @@ const data = [
     imgPath: "tejas.jpeg",
     linkedin: "https://www.linkedin.com/in/tejas-sudhir-tapas/",
   },
-  
+
   {
     name: "Ashwin Walunj |Power Programmer Infosys",
     label: `So I joined the program called CodeRun conducted by the O(1) coding club, where we were provided with ladders of different levels and after every 3 days, we had doubt clearance sessions. What I understood was to trust the process and keep on enhancing your knowledge and expertise on the basics just combine this with a little bit of luck and you will also land a great job. Finally, I cleared the HackWithInfy and banged an offer for the role of power programmer. If it weren't for the O(1) coding club, I would've known this too late and might not have landed the job that I have now.`,

@@ -13,14 +13,14 @@ import Arr from "./featuresdata";
 import RegisterSteps from "./registerSteps";
 import Carousel from "./carousel";
 const useStyles = makeStyles((theme) => ({
-  mar:{
-    [theme.breakpoints.down('xs')]: {
-      marginBottom:'40px',
+  mar: {
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: "40px",
     },
-  }
+  },
 }));
 function Landing() {
-  const classes=useStyles();
+  const classes = useStyles();
   return (
     <div>
       <div class="navsection">
@@ -33,7 +33,7 @@ function Landing() {
           width="100%"
           height="450"
           src="https://www.youtube.com/embed/6NKTKU6TWOY"
-          title="YouTube video player"
+          title="Coderun"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -57,19 +57,19 @@ function Landing() {
 
       <section class="purplebg section2">
         <Grid container justifyContent="center" spacing={6}>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={3} sm={3}>
             <p class="placedhead mar10 pcenter">500+</p>
             <p class="placedsub mar10 pcenter">Hours of coding</p>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={3} sm={3}>
             <p class="placedhead mar10 pcenter">400+</p>
             <p class="placedsub mar10 pcenter">Coding Questions</p>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={3} sm={3}>
             <p class="placedhead mar10 pcenter">40+</p>
             <p class="placedsub mar10 pcenter">Coding Tests</p>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={3} sm={3}>
             <p class="placedhead mar10 pcenter">500+</p>
             <p class="placedsub mar10 pcenter">students placed</p>
           </Grid>
@@ -126,8 +126,9 @@ function Landing() {
             }}
           >
             We provide the following 2 flexible Payment Plans. User can choose
-            any of the two according to his/her convenience. We charge money
-            only if we are successful in getting you placed.
+            any of the 2 according to his/her convenience. <br /> If you don't
+            get placed anywhere, your Upfront Fee will be refunded (if Plan B)
+            and you don't have to pay anything.
           </Typography>
         </Grid>
 
@@ -151,8 +152,13 @@ function Landing() {
 
       <section className="section5" id="testimonials">
         <div>
-          <p style={{ fontSize: "40px", fontWeight: "800" }} className={classes.mar}>Success Stories</p>
-          <Carousel  />
+          <p
+            style={{ fontSize: "40px", fontWeight: "800" }}
+            className={classes.mar}
+          >
+            Success Stories
+          </p>
+          <Carousel />
         </div>
       </section>
 
