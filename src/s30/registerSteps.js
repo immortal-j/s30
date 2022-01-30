@@ -44,11 +44,10 @@ const useStyles = makeStyles({
   step: {
     backgroundColor: "#8739f9",
   },
-  anc:{
-    textDecoration:'none',
-    color:'#8739f9',
-   
-  }
+  anc: {
+    textDecoration: "none",
+    color: "#8739f9",
+  },
 });
 
 export default function RegisterSteps() {
@@ -89,8 +88,9 @@ export default function RegisterSteps() {
                   component="p"
                   className={classes.pos}
                 >
-                  Pay the upfront fees (if any) to the upi id - <b>xyz@sbi</b>{" "}
-                  and take a screenshot for Payment proof.
+                  Pay the upfront fees (if Plan B) to the upi id -{" "}
+                  <b>namanvid30@oksbi</b> and take a screenshot for Payment
+                  proof.
                 </Typography>
               </Grid>
             </Grid>
@@ -132,11 +132,19 @@ export default function RegisterSteps() {
                   className={classes.pos}
                 >
                   Download{" "}
-                  <a href="https://www.google.com" target="_blank" className={classes.anc}>
+                  <a
+                    href="https://docs.google.com/document/d/1JWJizpgPL5dadTdp33z5qJNm_A-AadVs/edit?usp=sharing&ouid=100674111460607118893&rtpof=true&sd=true"
+                    target="_blank"
+                    className={classes.anc}
+                  >
                     ISA for Plan A
                   </a>{" "}
                   <b>or</b>{" "}
-                  <a href="https://www.google.com" target="_blank" className={classes.anc}>
+                  <a
+                    href="https://docs.google.com/document/d/1ywvSFEIoLntMXi0f6hzJtiQsiCxn9iT6/edit?usp=sharing&ouid=100674111460607118893&rtpof=true&sd=true"
+                    target="_blank"
+                    className={classes.anc}
+                  >
                     ISA for Plan B
                   </a>
                   <br />
@@ -182,12 +190,16 @@ export default function RegisterSteps() {
                   component="p"
                   className={classes.pos}
                 >
-                  Submit your application in this{" "}
-                  <a href="https://www.google.com" target="_blank" className={classes.anc}>
+                  Submit your application in{" "}
+                  <a
+                    href="https://forms.gle/siZ3jgUD7Ecy7XJM7"
+                    target="_blank"
+                    className={classes.anc}
+                  >
                     Google Form
                   </a>
-                  . You will need payment proof (if Plan B) and filled ISA to
-                  proceed.
+                  .<br /> You will need Payment Proof (if Plan B) and filled ISA
+                  to proceed.
                 </Typography>
               </Grid>
             </Grid>
