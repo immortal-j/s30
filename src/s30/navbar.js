@@ -98,7 +98,7 @@ export default function ButtonAppBar() {
           <a href="/">
             <img src={"logo2.svg"} height="50px" />
           </a>
-          <Typography className={classes.title}>O(1) Coding Club</Typography>
+          <Typography className={classes.title}>CodeRun</Typography>
           <div className={classes.menuSpace2}></div>
           <div className={classes.desktop}>
             <Button href="#" className={classes.btn}>

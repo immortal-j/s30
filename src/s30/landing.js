@@ -18,19 +18,19 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "40px",
     },
   },
-  btn:{
-    fontSize:'22px',
-    color: 'white',
-    fontWeight: '800',
-    borderRadius: '10px',
-    backgroundColor: '#8739f9',
-    padding: '20px',
-    marginTop: '35px',
-    textDecoration: 'none',
+  btn: {
+    fontSize: "22px",
+    color: "white",
+    fontWeight: "800",
+    borderRadius: "10px",
+    backgroundColor: "#8739f9",
+    padding: "20px",
+    marginTop: "35px",
+    textDecoration: "none",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'15px',
+      fontSize: "15px",
     },
-  }
+  },
 }));
 function Landing() {
   const classes = useStyles();
@@ -41,31 +41,20 @@ function Landing() {
       </div>
 
       <section class="section1">
-        <h1 class="lhead white martop-35">CodeRun</h1>
-        {/* <iframe
-          width="100%"
-          height="450"
-          src="https://www.youtube.com/embed/6NKTKU6TWOY"
-          title="Coderun"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        /> */}
-        {/* <div className="pos1">
-          <Lotie />
-        </div> */}
-        {/* <div className="pos2">
-          <Lotie />
-        </div> */}
-        <p className="phead martop-15 white">Kickstart your Placement Journey</p>
-        <br/>
-        <p className="phead martop-15 white">
-          Average ₹ 5 - 33 lakhs/annum placement
-        </p>
-        <p className="phead white ">Next Batch : February</p>
-        
-        <a href="#register" >
-        <Button className={classes.btn}>Register</Button>
+        <h1 class="white martop-35" style={{ fontSize: "40px" }}>
+          Kickstart your Placement Journey
+        </h1>
+        {/* <p className="phead martop-15 white">
+          Kickstart your Placement Journey
+        </p> */}
+        <br />
+        <p className="phead martop-15 white">Pay After Getting Placed</p>
+        <br />
+        <p className="phead martop-15 white">Average ₹ 5 - 33 LPA Placement</p>
+        <p className="phead white">Next Batch : February</p>
+
+        <a href="#register">
+          <Button className={classes.btn}>Register</Button>
         </a>
         {/* <Wave /> */}
       </section>
