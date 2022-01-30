@@ -15,6 +15,36 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const data = [
   {
+    name: "Akshay Mishra | Data Engineer @ Amazon",
+    label: `I started my interview preparation journey from the first seminar of O(1). Things were explained very well in detail, from tips and tricks for interviews to resources for DSA and core subjects.CPL was one of the highlights for me as I was able to improve my problem solving skills significantly. I would recommend O(1) to every fresher looking for mentorship, guidance and a productive atmosphere to learn and grow.`,
+    imgPath: "akshayMishra.png",
+    linkedin: "https://www.linkedin.com/in/akshay-mishra-1303/",
+  },
+  {
+    name: "Amarkumar Mishra | BackEnd Developer @ HackerEarth",
+    label: `I participated in CPL organized by O(1) Coding Club in May 2020 and I was team leader of my team. As, CPL was a team game it not only helped me to enhance my codingskills but also helped me to understand- 1. How to collaboratively solve a problem as a team. 2. Other better approaches for the same problem that you find out after discussing with your team mates. I would highly recommend to participate in CPL contest organized by O(1) coding club.`,
+    imgPath: "AmarKumarMishra.png",
+    linkedin: "https://www.linkedin.com/in/amarkumar-m-48b08a172",
+  },
+  {
+    name: "Sakshi Thakur | R&D @ VMware",
+    label: `I have been helped a lot from O(1) club! Right from the first seminar, we have been guided in almost everything related to placements. I started participating rigorously in CPL aore subjects. As a fresher guidance and resources helped me to learn and grow.`,
+    imgPath: "SakshiThakur.png",
+    linkedin: "https://www.linkedin.com/in/sakshithakur1612",
+  },
+  {
+    name: "Vishal Kriplani | Software Engineer @ Fivetran",
+    label: `The CPL helped me to maintain the speed and accuracy of problem-solving. Senior-Junior interaction was increased during these events. The Knowledge sessions were quite informative.`,
+    imgPath: "VishalKriplani.png",
+    linkedin: "https://www.linkedin.com/in/vishal-kriplani-a33181190/",
+  },
+  {
+    name: "Bhumika Nagrecha | SD Intern @ Bank of New York Mellon",
+    label: `I started my interview preparation journey from the first seminar of O(1). Things were explained very well in detail, from tips and tricks for interviews to resources for DSA andin contest streaks which improved my coding skills due to which I could clear the off-campus coding test for a job opportunity at Bank Of New York in my 3rd year itself . So in a nutshell, O(1) club is a single point solution for complete placement guidance.`,
+    imgPath: "BhumikaNagrecha.png",
+    linkedin: "https://www.linkedin.com/in/bhumikanagrecha/",
+  },
+  {
     name: "Monica Dholwani | SDE Intern @ Fivetran",
     label: `O(1) Coding Club helped me achieve this opportunity. My mentors were always there to guide & train me.
     Initially I was not good at coding, I didn't even know what competitive coding is!
@@ -58,25 +88,25 @@ const data = [
   },
 
   {
-    name: "Ashwin Walunj |Power Programmer Infosys",
+    name: "Ashwin Walunj | PP @ Infosys",
     label: `So I joined the program called CodeRun conducted by the O(1) coding club, where we were provided with ladders of different levels and after every 3 days, we had doubt clearance sessions. What I understood was to trust the process and keep on enhancing your knowledge and expertise on the basics just combine this with a little bit of luck and you will also land a great job. Finally, I cleared the HackWithInfy and banged an offer for the role of power programmer. If it weren't for the O(1) coding club, I would've known this too late and might not have landed the job that I have now.`,
     imgPath: "ashwinalunj.jpg",
     linkedin: "https://www.linkedin.com/in/atharva-u-96436a191/",
   },
   {
-    name: "Swaraj Chaudhari | Accenture",
+    name: "Swaraj Chaudhari | FSE @ Accenture",
     label: `Observing myself before & after doing Coderun with  O(1) Coding Club, Now I am very confident. Now I know how exactly to proceed with a given problem. I would seriously recommend you to join the course. Coderun and the aptitude series helped a lot during the placement season.`,
     imgPath: "swaraj.jpg",
     linkedin: "https://in.linkedin.com/in/swaraj-chaudhari-860803180",
   },
   {
-    name: "Atharva Upadhyay | Infosys",
+    name: "Atharva Upadhyay | PP @ Infosys",
     label: `O(1) coding club helped me alot to get focused and streamlined on what topics are important for each competitions/placement. Their personalised guidance and regular doubt sessions uplifted my problem solving skills and my confidence increased. Thank you O(1) coding club and specially Naman and Abhigyan sir to all your efforts in helping me to get such a wonderful placement. It was a great experience to learn and get inspired from you guys.`,
     imgPath: "atharvaupadhyay.jpg",
     linkedin: "https://www.linkedin.com/in/atharva-u-96436a191/",
   },
   {
-    name: "Vignesh Pathak | Accenture",
+    name: "Vignesh Pathak | FSE @ Accenture",
     label: `O1 Coding Club opened a new exciting world for me .  Without their training it would never been that friendly or postive entrance into the world of coding that helped me to get this far . It had played a crucial role in my academic life and my first successful Placement . Thank you for your invaluable help , you have opened new horizons for me !`,
     imgPath: "vignesh.jpg",
     linkedin: "https://www.linkedin.com/in/vighnesh-pathak-4018b7192/",
@@ -159,7 +189,7 @@ function Carousel() {
 
           <Grid item xs={12} sm={12}>
             <Typography className={classes.title}>
-              {data[activeStep].name}
+             <a style={{textDecoration:'none',color:'#fff'}} href={data[activeStep].linkedin} target="_blank"> {data[activeStep].name}</a>
             </Typography>
           </Grid>
 
